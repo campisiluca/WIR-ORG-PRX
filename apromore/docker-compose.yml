@@ -1,0 +1,52 @@
+# Docker compose to deploy Apromore core on the host server.
+version: "3.7"
+
+# Apromore Core
+services:
+  apromore-ee:
+    image: ${APROMORE_IMAGE}
+    container_name: apromore-core
+    environment:
+      JAVA_OPTS: "-server -Xmx20g -Xmn1g"
+    networks:
+       - overlay
+    volumes:
+      - data-repository:/home/ubuntu/.apromore/Repository
+    env_file:
+      - .env     
+    ports:
+      - 80:8181
+    depends_on:
+      apromore-sql:
+       condition: service_healthy
+    restart: always
+
+  # MySql
+  apromore-sql:
+    image: ${MYSQL_IMAGE}
+    container_name: apromore-sql
+    command: --max_allowed_packet=2G
+    networks:
+       - overlay
+    environment:
+      MYSQL_DATABASE: apromore
+      MYSQL_ROOT_PASSWORD: MAcri
+    volumes:
+      - ./config/init.sql:/docker-entrypoint-initdb.d/init.sql      
+      - db-data:/var/lib/mysql
+    ports:
+      - 3306:3306      
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10 
+    restart: always
+
+# Volumes    
+volumes:
+  data-repository:
+  db-data:
+
+# Network
+networks:
+    overlay:

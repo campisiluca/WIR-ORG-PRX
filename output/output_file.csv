@@ -1,0 +1,43 @@
+Case ID,Activity,Timestamp,Resource,Resource,Costs,Activity
+3,register request,2010-12-30 14:32:00,Pete,Pete,50,register request
+3,examine casually,2010-12-30 15:06:00,Mike,Mike,400,examine casually
+3,check ticket,2010-12-30 16:34:00,Ellen,Ellen,100,check ticket
+3,decide,2011-01-06 09:18:00,Sara,Sara,200,decide
+3,reinitiate request,2011-01-06 12:18:00,Sara,Sara,200,reinitiate request
+3,examine thoroughly,2011-01-06 13:06:00,Sean,Sean,400,examine thoroughly
+3,check ticket,2011-01-08 11:43:00,Pete,Pete,100,check ticket
+3,decide,2011-01-09 09:55:00,Sara,Sara,200,decide
+3,pay compensation,2011-01-15 10:45:00,Ellen,Ellen,200,pay compensation
+2,register request,2010-12-30 11:32:00,Mike,Mike,50,register request
+2,check ticket,2010-12-30 12:12:00,Mike,Mike,100,check ticket
+2,examine casually,2010-12-30 14:16:00,Sean,Sean,400,examine casually
+2,decide,2011-01-05 11:22:00,Sara,Sara,200,decide
+2,pay compensation,2011-01-08 12:05:00,Ellen,Ellen,200,pay compensation
+1,register request,2010-12-30 11:02:00,Pete,Pete,50,register request
+1,examine thoroughly,2010-12-31 10:06:00,Sue,Sue,400,examine thoroughly
+1,check ticket,2011-01-05 15:12:00,Mike,Mike,100,check ticket
+1,decide,2011-01-06 11:18:00,Sara,Sara,200,decide
+1,reject request,2011-01-07 14:24:00,Pete,Pete,200,reject request
+6,register request,2011-01-06 15:02:00,Mike,Mike,50,register request
+6,examine casually,2011-01-06 16:06:00,Ellen,Ellen,400,examine casually
+6,check ticket,2011-01-07 16:22:00,Mike,Mike,100,check ticket
+6,decide,2011-01-07 16:52:00,Sara,Sara,200,decide
+6,pay compensation,2011-01-16 11:47:00,Mike,Mike,200,pay compensation
+5,register request,2011-01-06 09:02:00,Ellen,Ellen,50,register request
+5,examine casually,2011-01-07 10:16:00,Mike,Mike,400,examine casually
+5,check ticket,2011-01-08 11:22:00,Pete,Pete,100,check ticket
+5,decide,2011-01-10 13:28:00,Sara,Sara,200,decide
+5,reinitiate request,2011-01-11 16:18:00,Sara,Sara,200,reinitiate request
+5,check ticket,2011-01-14 14:33:00,Ellen,Ellen,100,check ticket
+5,examine casually,2011-01-16 15:50:00,Mike,Mike,400,examine casually
+5,decide,2011-01-19 11:18:00,Sara,Sara,200,decide
+5,reinitiate request,2011-01-20 12:48:00,Sara,Sara,200,reinitiate request
+5,examine casually,2011-01-21 09:06:00,Sue,Sue,400,examine casually
+5,check ticket,2011-01-21 11:34:00,Pete,Pete,100,check ticket
+5,decide,2011-01-23 13:12:00,Sara,Sara,200,decide
+5,reject request,2011-01-24 14:56:00,Mike,Mike,200,reject request
+4,register request,2011-01-06 15:02:00,Pete,Pete,50,register request
+4,check ticket,2011-01-07 12:06:00,Mike,Mike,100,check ticket
+4,examine thoroughly,2011-01-08 14:43:00,Sean,Sean,400,examine thoroughly
+4,decide,2011-01-09 12:02:00,Sara,Sara,200,decide
+4,reject request,2011-01-12 15:44:00,Ellen,Ellen,200,reject request
